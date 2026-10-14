@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 100%;
+}
+
+.left-column {
+  width: 60%;
+  float: left;
+  background-color: lightblue;
+  padding: 20px;
+}
+
+.right-column {
+  width: 38%;
+  float: right;
+  background-color: lightgreen;
+  padding: 20px;
+}
+
+/* Xu ly float */
+.clear {
+  clear: both;
+}
+
+@media (max-width: 600px) {
+  .left-column,
+  .right-column {
+    float: none;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
